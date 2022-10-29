@@ -1,0 +1,1279 @@
+/* 
+#FCF1DA (Fundo cor de pele)
+#324A5F Botões
+
+Container: height: 668px;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+/*Dosis Font*/
+
+/*#region Básicos*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    user-select: none;
+    font-family: 'Dosis', 'Times New Roman', Times, serif;
+}
+html{
+    height: max-content;
+    width: 100vw;
+    background-color: aqua;
+    top: 0;
+    left: 0;
+    overflow-y: visible;
+}
+::-webkit-scrollbar{
+    background-color: #324A5F;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+.BP{
+    animation-name: BordaPulsando;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+.Container{
+    position: absolute;
+    width: 100vw;
+    height: 18260px;
+    background-color: #0C1821;
+}
+/*#endregion*/
+
+/*#region Intro*/
+.Seções{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    display: inline-flex;
+    float: right;
+    left: 50%;
+    top: 220px;
+    transform: translate(-50%);
+}
+.Opções{
+    text-align: center;
+    width: 100px;
+    background-color: #324A5F;
+    font-family: 'Dosis', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.ArtistasB{
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+.GaleriaB{
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+.ArtistasB:hover, .GaleriaB:hover{
+    background-color: white;
+}
+.ArtistasB:focus, .GaleriaB:focus{
+    background-color: white;
+}
+.Titulos{
+    margin: 0;
+    text-align: center;
+    width: 650px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    top: 300px;
+    transform: translate(-50%, -50%);
+    background-color: #1B2A41;
+    color: white;
+    border-radius: 20px;
+}
+@keyframes BordaPulsando {
+    0%{
+        border: 2px solid rgba( 255, 255, 255, 0.18 );
+    }
+    50%{
+        border: 2px solid rgba(136, 136, 136, 0.18);
+    }
+    100%{
+        border: 2px solid rgba( 255, 255, 255, 0.18 );
+    }
+}
+.Título{
+    font-family: 'Dosis', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -70px);
+}
+.Subtitulo{
+    font-family: 'Dosis', 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -70px);
+}
+.SetaDiv{
+    position: absolute;
+    left: 50%;
+    top: 527px;
+    transform: translate(-50%, 0%);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.Seta{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-130%, -50%);
+    width: 30px;
+    height: 40px;
+    animation-name: AnimSeta;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes AnimSeta {
+    0%{
+        transform: translate(-133%, -50%);
+    }
+    25%{
+        transform: translate(-133%, -65%);
+    }
+    50%{
+        transform: translate(-133%, -35%);
+    }
+    100%{
+        transform: translate(-133%, -50%);
+    }
+}
+/*#endregion*/
+
+/*#region Descrição FACC*/
+.Titulo2Div{
+    position: absolute;
+    top: 670px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 350px;
+    height: 100px;
+    background-color: #1B2A41;
+    text-align: center;
+    border-radius: 20px;
+}
+.Titulo2{
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    font-size: 38px;
+}
+.Descrição{
+    position: absolute;
+    top: 830px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    height: max-content;
+    background-color: #1B2A41;
+    z-index: 5;
+    border-radius: 20px;
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+/*#endregion*/
+
+/*#region Artistas*/
+.Titulo3Div{
+    position: absolute;
+    left: 50%;
+    top: 1336px;
+    width: 350px;
+    height: 100px;
+    color: white;
+    transform: translate(-50%);
+    background-color: #1B2A41;
+    text-align: center;
+    border-radius: 20px;
+}
+.Titulo3{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+}
+
+.ArtistaDiv{
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    width: 700px;
+    height: 400px;
+    background-color: #1B2A41;
+}
+.ArtistaP{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px
+}
+.ArtistaP2{
+    text-align: justify;
+    position: absolute;
+}
+.ArtistaPNG{
+    position: relative;
+    top: 15px;
+    left: 30px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.AlineMiguelDiv{
+    top: 1510px;
+}
+.AlineMiguelP{
+    margin-top: 30px;
+}
+.AlineMiguelPNG{
+    top: 40px;
+}
+.AlineMiguelP2{
+    font-size: 21px;
+    width: 450px;
+    top: 106px;
+    left: 233px;
+}
+
+.AnitaMalfattiDiv{
+    top: 1930px;
+}
+.AnitaMalfattiP2{
+    font-size: 18px;
+    width: 450px;
+    top: 106px;
+    left: 238px;
+}
+
+.DiCavalcantiDiv{
+    top: 2350px;
+}
+.DiCavalcantiPNG{
+    left: 36px;
+}
+.DiCavalcantiP2{
+    font-size: 19px;
+    width: 470px;
+    top: 108px;
+    left: 215px;
+}
+
+.GiuliaPuntelDiv{
+    top: 2770px;
+}
+.GiuliaPuntelP{
+    margin-top: 30px;
+}
+.GiuliaPuntelPNG{
+    top: 40px;
+    left: 36px;
+}
+.GiuliaPuntelP2{
+    font-size: 21px;
+    width: 470px;
+    top: 106px;
+    left: 217px;
+}
+
+.IsmaelNeryDiv{
+    top: 3190px;
+    padding-bottom: 0px;
+}
+.IsmaelNeryPNG{
+    left: 35px;
+}
+.IsmaelNeryP2{
+    font-size: 16.3px;
+    width: 470px;
+    top: 106px;
+    left: 210px;
+}
+
+.JohnGrazDiv{
+    top: 3610px;
+}
+.JohnGrazP2{
+    font-size: 18px;
+    width: 470px;
+    top: 106px;
+    left: 214px;
+}
+
+.VicenteDiv{
+    top: 4030px;
+}
+.VicenteP2{
+    font-size: 18px;
+    width: 470px;
+    top: 106px;
+    left: 214px;
+}
+
+.OswaldoDiv{
+    top: 4450px;
+}
+.OswaldoP2{
+    font-size: 18px;
+    width: 465px;
+    top: 106px;
+    left: 220px;
+}
+
+.TarsilaDiv{
+    top: 4870px;
+}
+.TarsilaP2{
+    font-size: 17px;
+    width: 465px;
+    top: 106px;
+    left: 219px;
+}
+/*#endregion*/
+
+/*#region Releituras*/
+.Titulo4Div{
+    position: absolute;
+    left: 50%;
+    top: 5350px;
+    width: 350px;
+    height: 100px;
+    color: white;
+    transform: translate(-50%);
+    background-color: #1B2A41;
+    text-align: center;
+    border-radius: 20px;
+}
+.Titulo4{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+}
+.ExplicaçãoReleituras{
+    position: absolute;
+    left: 50%;
+    top: 5500px;
+    padding: 20px;
+    color: white;
+    transform: translate(-50%);
+    background-color: #1B2A41;
+    text-align: justify;
+    border-radius: 20px;
+    font-size: 19px;
+}
+
+.RB{
+    position: absolute;
+    left: 50%;
+    width: 700px;
+    height: 800px;
+    color: white;
+    transform: translate(-50%);
+    background-color: #1B2A41;
+    border-radius: 20px;
+}
+.RPB{
+    text-align: center;
+    margin-top: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    width: max-content;
+}
+.RIMG{
+    position: relative;
+    transition: 0.5s ease-in-out;
+    margin-top: 175px;
+    left: 50%;
+    transform: translate(-50%);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.RIMG:hover{
+    opacity: 0%;
+}
+.OIMG{
+    position: absolute;
+    transition: 1s ease-in-out;
+    margin-top: 175px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.RelatoP{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    font-size: 30px;
+}
+.Relato{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 650px;
+    text-align: justify;
+    font-size: 23px;
+    margin-top: 56px;
+
+}
+
+.R1{
+    top: 5615px;
+}
+.O1{
+    height: 381px;
+}
+.Ro1{
+    width: 250px;
+    height: 380px;
+}
+
+.R2{
+    top: 6440px;
+    height: 700px;
+}
+.O2{
+    top: 60px;
+}
+.Ro2{
+    width: 250px;
+}
+
+.R3{
+    top: 7166px;
+    height: 720px;
+}
+.O3{
+    height: 334px;
+    top: 0px;
+}
+.Ro3{
+    width: 250px;
+}
+
+.R4{
+    top: 7910px;
+    height: 500px;
+}
+.O4{
+    height: 330px;
+    top: -50px;
+}
+.Ro4{
+    width: 250px;
+    top: -50px;
+}
+
+.R5{
+    top: 8435px;
+    height: 500px;
+}
+.O5{
+    height: 290px;
+    width: 268px;
+    top: -48px;
+}
+.Ro5{
+    width: 270px;
+    top: -50px;
+}
+
+.R6{
+    top: 8955px;
+    height: 1020px;
+}
+.O6{
+    height: 280px;
+    width: 350px;
+    top: -10px;
+}
+.Ro6{
+    width: 350px;
+    top: -10px;
+}
+
+.R7{
+    top: 9994px;
+    height: 785px;
+}
+.O7{
+    height: 280px;
+    width: 330px;
+    top: 55px;
+}
+.Ro7{
+    width: 330px;
+    top: -10px;
+}
+
+.R8{
+    top: 16845px;
+    height: 725px;
+}
+.O8{
+    height: 268px;
+    width: 350px;
+    top: -20px;
+}
+.Ro8{
+    width: 360px;
+    top: -20px;
+}
+.R8P{
+    top: 440px;
+}
+.R8P2{
+    top: 440px;
+}
+
+.R9{
+    top: 11380px;
+    height: 990px;
+}
+.O9{
+    height: 440px;
+    width: 330px;
+    top: -10px;
+}
+.Ro9{
+    width: 330px;
+    top: -10px;
+}
+
+.R10{
+    top: 12390px;
+    height: 779px;
+}
+.O10{
+    height: 402px;
+    width: 330px;
+    top: -10px;
+}
+.Ro10{
+    width: 330px;
+    top: -10px;
+}
+
+.R11{
+    top: 13190px;
+    height: 570px;
+}
+.O11{
+    height: 248px;
+    width: 330px;
+    top: -10px;
+}
+.Ro11{
+    width: 330px;
+    top: -10px;
+}
+
+.R12{
+    top: 13785px;
+    height: 708px;
+}
+.O12{
+    height: 220px;
+    width: 250px;
+    top: 30px;
+}
+.Ro12{
+    width: 250px;
+    height: 300px;
+    top: -10px;
+}
+
+.R13{
+    top: 14518px;
+    height: 685px;
+}
+.O13{
+    height: 308px;
+    width: 410px;
+    left: 353px;
+    top: 0px;
+}
+.Ro13{
+    width: 330px;
+    left: 183px;
+    top: -50px;
+    transform: rotateZ(-90deg);
+}
+.R13P{
+    position: relative;
+    top: -80px !important;
+    text-align: center;
+}
+.R13P2{
+    top: 520px;
+}
+
+.R14{
+    top: 15230px;
+    height: 635px;
+}
+.O14{
+    height: 308px;
+    width: 410px;
+    left: 353px;
+    top: 0px;
+}
+.Ro14{
+    width: 410px;
+    margin-left: 2px;
+}
+
+.R15{
+    top: 10800px;
+    height: 565px;
+}
+.O15{
+    height: 185px;
+    width: 330px;
+    top: -10px;
+}
+.Ro15{
+    width: 330px;
+    top: -10px;
+}
+
+.R16{
+    top: 15890px;
+    height: 935px;
+}
+.O16{
+    height: 300px;
+    width: 310px;
+    top: 100px;
+}
+.Ro16{
+    width: 310px;
+    top: -10px;
+}
+
+.R17{
+    top: 17590px;
+    height: 610px;
+}
+.O17{
+    height: 300px;
+    width: 390px;
+    left: 355px;
+    top: -34px;
+}
+.Ro17{
+    width: 310px;
+    top: -80px;
+    left: 195px;
+    transform: rotateZ(-90deg);
+}
+.R17P{
+    top: 475px;
+}
+.R17P2{
+    top: 475px;
+}
+/*#endregion*/
+
+/*#region Footer*/
+footer{
+    height: 200px;
+    width: 100vw;
+    background-color: #1B2A41;
+    z-index: 5;
+    position: absolute;
+    top: 18260px;
+}
+.FooterDiv{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    text-align: justify;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.Logo{
+    position: absolute;
+    width: 130px;
+    left: 20px;
+    top: 20px;
+}
+.SFP{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation-name: Link;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.SFP:hover{
+    text-decoration: underline;
+}
+.CoopeiseLogo{
+    width: 130px;
+    height: 130px;
+    position: inherit;
+    top: 20px;
+    right: 20px;
+    border-radius: 100px;
+}
+.CoopLink{
+    position: absolute;
+    right: 55px;
+    bottom: 20px;
+    color: aqua;
+    font-size: 20px;
+    cursor: pointer;
+    animation-name: Link;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes Link {
+    0%{
+        color: whitesmoke;
+    }
+    50%{
+        color: aqua;
+    }
+    100%{
+        color: whitesmoke;
+    }
+}
+.CoopLink:hover{
+    text-decoration: underline;
+}
+/*#endregion*/
+
+.Marcador{
+    position: absolute;
+    left: 50%;
+    top: 2004px; /*1366px*/
+    transform: translate(-50%);
+    width: 500px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: red;
+    display: none;
+}
+
+/*#region MEDIAS*/
+@media screen and (max-width: 755px){
+    .Descrição{
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .Titulos{
+        width: 500px;
+        font-size: 20px;
+    }
+    .Título{
+        font-size: 35px;
+    }
+    .Subtitulo{
+        font-size: 30px;
+    }
+    .Seções{
+        top: 200px;
+    }
+    .Descrição{
+        width: 450px;
+        font-size: 18px;
+        top: 800px;
+    }
+    .ArtistaDiv{
+        width: 500px;
+    }
+    .ArtistaPNG{
+        transform: scale(0.7);
+        left: 5px;
+    }
+    .ArtistaP{
+        font-size: 30px;
+    }
+    .ArtistaP2{
+        left: 150px;
+        width: 340px;
+        font-size: 15px;
+    }
+    .AlineMiguelP{
+        margin-top: 50px;
+    }
+    .AlineMiguelP2{
+        width: 320px;
+        left: 165px;
+        top: 123px;
+    }
+    .AlineMiguelPNG{
+        top: 0px;
+        left: -5px;
+    }
+    .AnitaMalfattiP{
+        margin-top: 32px;
+    }
+    .AnitaMalfattiP2{
+        font-size: 15px;
+        width: 330px;
+        top: 130px;
+        left: 160px;
+    }
+    .AnitaMalfattiPNG{
+        left: -15px;
+        top: -13px;
+    }
+    .DiCavalcantiP{
+        margin-top: 30px;
+    }
+    .DiCavalcantiP2{
+        top: 130px;
+    }
+    .DiCavalcantiPNG{
+        top: -10px;
+        left: -3px;
+    }
+    .GiuliaPuntelP{
+        margin-top: 45px;
+    }
+    .GiuliaPuntelP2{
+        width: 340px;
+        top: 138px;
+    }
+    .GiuliaPuntelPNG{
+        left: -5px;
+        top: 20px;
+    }
+    .IsmaelNeryP2{
+        font-size: 14px;
+    }
+    .IsmaelNeryPNG{
+        left: -1px;
+        top: -25px;
+    }
+    .JohnGrazP2{
+        left: 149px;
+    }
+    .JohnGrazPNG{
+        left: -5px;
+        top: -23px;
+    }
+    .VicenteP{
+        margin-top: 40px;
+    }
+    .VicenteP2{
+        top: 130px;
+    }
+    .VicentePNG{
+        left: -5px;
+        top: -20px;
+    }
+    .OswaldoP{
+        margin-top: 40px;
+    }
+    .OswaldoP2{
+        top: 150px;
+    }
+    .OswaldoPNG{
+        left: -10px;
+        top: -2px;
+    }
+    .TarsilaP2{
+        font-size: 14.5px;
+    }
+    .TarsilaPNG{
+        left: -7px;
+        top: -24px;
+    }
+    .ExplicaçãoReleituras{
+        top: 5490px;
+        font-size: 15px;
+        width: 480px;
+    }
+    .RB{
+        width: 500px !important;
+    }
+    .Relato{
+        width: 480px !important;
+        font-size: 19px !important;
+    }
+    .Ro13{
+        left: 80px;
+    }
+    .O13{
+        left: 250px;
+    }
+    .O14{
+        left: 253px;
+    }
+    .Ro17{
+        left: 95px;
+    }
+    .O17{
+        left: 255px;
+    }
+    .RPB{
+        font-size: 25px;
+    }
+    .RB{
+        width: 530px;
+    }
+    .Relato{
+        width: 510px;
+        font-size: 20px
+    }
+    .Logo, .CoopeiseLogo{
+        width: 100px;
+        height: 100px;
+    }
+    .Logo{
+        left: 36px;
+        top: 36px;
+    }
+    .CoopeiseLogo{
+        right: 36px;
+        top: 36px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .Titulos{
+        width: 300px;
+    }
+    .Título{
+        font-size: 38px;
+        top: 120px;
+    }
+    .Subtitulo{
+        font-size: 24px;
+        top: 120px;
+    }
+    .Seções{
+        top: 200px;
+    }
+    .Descrição{
+        font-size: 15px;
+        top: 768px;
+        width: 270px;
+    }
+    .Titulo2Div, .Titulo3Div, .Titulo4Div{
+        width: 180px;
+        height: 70px;
+    }
+    .Titulo3Div{
+        top: 1385px;
+    }
+    .ArtistaDiv{
+        width: 300px;
+    }
+    .Titulo2, .Titulo3, .Titulo4{
+        font-size: 27px;
+    }
+    .ArtistaP{
+        position: absolute;
+        font-size: 17px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .ArtistaP2{
+        left: 50%;
+        transform: translate(-50%);
+        width: 280px;
+    }
+    .AlineMiguelP{
+        top: -38px;
+    }
+    .AlineMiguelP2{
+        top: 200px;
+    }
+    .AlineMiguelPNG{
+        left: 55px;
+        margin-top: -5px;
+        transform: scale(0.6);
+    }
+    .AnitaMalfattiP{
+        top: -25px;
+    }
+    .AnitaMalfattiP2{
+        top: 200px;
+        font-size: 12.1px;
+    }
+    .AnitaMalfattiPNG{
+        transform: scale(0.56);
+        left: 49px;
+        margin-top: 13px;
+    }
+    .DiCavalcantiP{
+        top: -25px;
+    }
+    .DiCavalcantiP2{
+        top: 200px;
+        font-size: 14px;
+    }
+    .DiCavalcantiPNG{
+        transform: scale(0.6);
+        margin-top: 8px;
+        left: 64px;
+    }
+    .GiuliaPuntelP{
+        top: -35px;
+    }
+    .GiuliaPuntelP2{
+        top: 200px;
+    }
+    .GiuliaPuntelPNG{
+        transform: scale(0.6);
+        top: -10px;
+        left: 65px;
+    }
+    .IsmaelNeryP{
+        top: -15px;
+    }
+    .IsmaelNeryP2{
+        font-size: 11.5px;
+        top: 155px;
+    }
+    .IsmaelNeryPNG{
+        transform: scale(0.43);
+        left: 70px;
+        margin-top: 1px;
+    }
+    .JohnGrazP{
+        top: -12px;
+    }
+    .JohnGrazP2{
+        font-size: 13px;
+        top: 180px;
+    }
+    .JohnGrazPNG{
+        transform: scale(0.5);
+        margin-top: 15px;
+        left: 64px;
+    }
+    .VicenteP{
+        top: -30px;
+    }
+    .VicenteP2{
+        font-size: 14px;
+        top: 170px;
+    }
+    .VicentePNG{
+        transform: scale(0.45);
+        top: -14px;
+        left: 64px;
+    }
+    .OswaldoP{
+        top: -30px;
+    }
+    .OswaldoP2{
+        font-size: 14px;
+        top: 200px;
+    }
+    .OswaldoPNG{
+        transform: scale(0.56);
+        left: 58px;
+    }
+    .TarsilaP{
+        top: -12px;
+    }
+    .TarsilaP2{
+        font-size: 12px;
+        top: 165px;
+    }
+    .TarsilaPNG{
+        transform: scale(0.45);
+        top: -17px;
+        left: 62px;
+    }
+    .ExplicaçãoReleituras{
+        widtwwh: 190px;
+        top: 5465px;
+        text-align: justify;
+    }
+    .RB{
+        width: 300px !important;
+    }
+    .RPB{
+        font-size: 17px;
+    }
+    .RelatoP{
+        font-size: 25px;
+    }
+    .Relato{
+        font-size: 16px !important;
+        width: 280px !important;
+    }
+    .Ro2{
+        top: -40px;
+    }
+    .O2{
+        top: 20px;
+    }
+    .Ro3{
+        top: -35px;
+    }
+    .O3{
+        top: -35px;
+    }
+    .Ro6{
+        width: 250px;
+        top: -35px;
+    }
+    .O6{
+        width: 250px;
+        height: 200px;
+        top: -35px;
+    }
+    .O6P{
+        font-size: 17px !important;
+    }
+    .Ro7{
+        width: 250px;
+        top: -28px;
+    }
+    .O7{
+        width: 250px;
+        top: -15px;
+    }
+    .Ro15{
+        top: -35px;
+        width: 250px;
+    }
+    .O15{
+        top: -35px;
+        width: 250px;
+        height: 140px;
+    }
+    .Ro9{
+        width: 250px;
+        top: -25px;
+    }
+    .O9{
+        top: -25px;
+        width: 250px;
+        height: 333px;
+    }
+    .Ro10{
+        width: 250px;
+        top: -25px;
+    }
+    .O10{
+        width: 250px;
+        height: 305px;
+        top: -25px;
+    }
+    .Ro11{
+        width: 250px;
+        top: -25px;
+    }
+    .O11{
+        width: 250px;
+        height: 190px;
+        top: -25px;
+    }
+    .Ro13{
+        height: 250px;
+        width: 200px;
+        left: 47px;
+        top: -70px;
+    }
+    .O13{
+        width: 250px;
+        height: 200px;
+        left: 152px;
+        top: -46px;
+    }
+    .R13P2{
+        top: 360px !important;
+    }
+    .Ro14{
+        width: 250px;
+        top: -30px;
+    }
+    .O14{
+        width: 250px;
+        height: 188px;
+        left: 152px;
+        top: -30px;
+    }
+    .Ro16{
+        width: 250px;
+        top: -25px;
+    }
+    .O16{
+        width: 250px;
+        height: 230px;
+        top: 45px;
+    }
+    .Ro8{
+        width: 250px;
+    }
+    .O8{
+        width: 250px;
+        height: 188px;
+    }
+    .R8P{
+        top: 380px;
+    }
+    .R8P2{
+        top: 400px;
+    }
+    .Ro17{
+        left: 46px;
+        height: 250px;
+        width: 200px;
+    }
+    .O17{
+        width: 250px;
+        height: 200px;
+        left: 150px;
+        top: -55px;
+    }
+    .R17P{
+        top: 360px;
+    }
+    .R17P2{
+        top: 370px;
+    }
+}
+/*#endregion*/
